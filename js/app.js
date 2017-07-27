@@ -26,9 +26,19 @@ $(document).ready(function() {
 		$('.ryu-ready').show();
 		// ryu goes back to his ready position
 	});
+$(window).keydown(function() {
+		$('.ryu-cool').show().keydown(88);
+		$('.ryu-still').hide();
+		$('.ryu-ready').hide();
+	})
+$(window).keyup(function(){
+	$('.ryu-cool').hide().keyup(88);
+	$('.ryu-still').show();
+})
 });
 function playhadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
 }
+

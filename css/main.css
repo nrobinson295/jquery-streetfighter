@@ -14,11 +14,11 @@ body {
 	width: 659px;
 	height: 494px;
 }
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
 }
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
 }
 .ryu-ready {
@@ -44,4 +44,13 @@ body {
 	top: 166px;
 	left: 565px;
 	float: left;
+}
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+.how-to, .main {
+	display: block;
+	color: blue;
+	font-family: sans-serif;
+	font-size: 20px;
 }
