@@ -37,11 +37,10 @@ $(document).ready(function() {
 	});
 	$(window).keyup(function(e) {
 		console.log('working')
-		//if (e.keyCode === 72) {
+		if (e.keyCode === 72) {
 			$('.hulk-ryu-cool').hide();
 			$('.hulk-ryu-still').show();
-			//$('.hulk-ryu-ready').show();
 			isHoldingH = false;
-	//	}
+		}
 	});
 });
