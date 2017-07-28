@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	var isHoldingH = false
+	var isHoldingX = false
 	$('.hulk-ryu').mouseenter(function(){
-		if (!isHoldingH) {
+		if (!isHoldingX) {
 		$('.hulk-ryu-still').hide();
 		$('.hulk-ryu-ready').show();
 		}
@@ -23,22 +23,22 @@ $(document).ready(function() {
 			$('.hulk-ryu-ready').hide();
 	})
 	.mouseup(function() {
+		$('.hulk-ryu-throwing').hide();
 		$('.hulk-ryu-ready').show();
-		$('hulk-ryu-throwing').hide();
 	})
 	$(window).keydown(function(e) {
-		if (e.keycode === 72){
+		if (e.keycode === 88){
 		$('.hulk-ryu-cool').show();
 		$('.hulk-ryu-still').hide();
 		$('.hulk-ryu-ready').hide();
-		isHoldingH = true;
+		isHoldingX = true;
 		}
 	})
 	$(window).keyup(function(e) {
-		if (e.keycode === 72) {
+		if (e.keycode === 88) {
 		$('.hulk-ryu-cool').hide();
 		$('hulk-ryu-still').show();
-		isHoldingH = false
+		isHoldingX = false
 		}
 	})
-})
+});

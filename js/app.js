@@ -30,7 +30,7 @@ $(document).ready(function() {
 		// ryu goes back to his ready position
 	});
 	$(window).keydown(function(e) {
-		if(e.keyCode === 88){
+		if (e.keyCode === 88){
 			$('.ryu-cool').show();
 			$('.ryu-still').hide();
 			$('.ryu-ready').hide();
@@ -38,7 +38,7 @@ $(document).ready(function() {
 		}
 	})
 	$(window).keyup(function(e){
-		if(e.keyCode === 88) {
+		if (e.keyCode === 88) {
 			console.log();
 			$('.ryu-cool').hide();
 			$('.ryu-still').show();
