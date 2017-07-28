@@ -36,7 +36,7 @@ $(document).ready(function() {
 			$('.ryu-ready').hide();
 			isholdingX = true;
 		}
-	})
+	});
 	$(window).keyup(function(e){
 		if (e.keyCode === 88) {
 			console.log();
@@ -44,7 +44,7 @@ $(document).ready(function() {
 			$('.ryu-still').show();
 			isHoldingX = false;
 		}
-	})
+	});
 });
 	function playhadouken () {
 		$('#hadouken-sound')[0].volume = 0.5;
